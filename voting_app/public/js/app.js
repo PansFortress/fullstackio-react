@@ -24,6 +24,12 @@ class Product extends React.Component {
                     <img src={this.props.productImageUrl} alt=""/>
                 </div>
                 <div className='middle aligned content'>
+                    <div>
+                        <a href="">
+                            <i className='large caret up icon' />
+                        </a>
+                        {this.props.votes}
+                    </div>
                     <div className='description'>
                         <a href={this.props.url}>{this.props.title}</a>
                         <p>{this.props.description}</p>
